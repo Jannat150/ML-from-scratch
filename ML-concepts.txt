@@ -1,224 +1,242 @@
-# Machine Learning Notes
+Machine Learning Notes
 
-## Contents
-1. What is Machine Learning  
-2. Types of Machine Learning  
-   - Supervised Learning  
-   - Unsupervised Learning  
-   - Reinforcement Learning  
-   - Semi-Supervised Learning  
-   - Self-Supervised Learning  
-3. Key ML Concepts  
-4. Model Lifecycle  
-5. Evaluation Metrics  
-6. Bias-Variance Tradeoff  
-7. Overfitting vs Underfitting  
-8. Algorithm Quick Reference  
+CONTENTS
+
+1. What is Machine Learning
+2. Types of Machine Learning
+
+   * Supervised Learning
+   * Unsupervised Learning
+   * Reinforcement Learning
+   * Semi-Supervised Learning
+   * Self-Supervised Learning
+3. Key ML Concepts
+4. Model Lifecycle
+5. Evaluation Metrics
+6. Bias-Variance Tradeoff
+7. Overfitting vs Underfitting
+8. Algorithm Quick Reference
 
 ---
 
-## What is Machine Learning
+WHAT IS MACHINE LEARNING
 
-Machine Learning (ML) is a subset of Artificial Intelligence that enables systems to learn from data and improve performance on tasks **without being explicitly programmed**.
+Machine Learning (ML) is a subset of Artificial Intelligence that enables systems to learn from data and improve performance on tasks without being explicitly programmed.
 
 Instead of hard-coded rules, ML models discover patterns automatically with minimal human intervention.
 
 ---
 
-## Core Components
+CORE COMPONENTS
 
-- **Data** → The fuel of ML. Quality, quantity, and diversity determine performance.  
-- **Model** → A mathematical function that maps inputs to outputs.  
-- **Algorithm** → The method used to train the model (optimize parameters).  
-
----
-
-## Types of Machine Learning
-
-### Supervised Learning
-The model is trained on **labeled data**.
-
-- **Goal:** Learn mapping from input → output  
-- Most widely used in industry  
-
-#### Types:
-- **Classification**
-  - Predict discrete class labels  
-  - Example: Spam detection  
-
-- **Regression**
-  - Predict continuous values  
-  - Example: House price prediction  
+* Data: The fuel of ML. Quality, quantity, and diversity determine performance.
+* Model: A mathematical function that maps inputs to outputs.
+* Algorithm: The method used to train the model (optimize parameters).
 
 ---
 
-### Unsupervised Learning
-The model learns from **unlabeled data** and finds hidden patterns.
+TYPES OF MACHINE LEARNING
 
-#### Clustering
-- Groups similar data points  
-- Algorithms: K-Means, DBSCAN, Hierarchical Clustering, Gaussian Mixture Models  
-- Use cases: Customer segmentation, anomaly detection  
+SUPERVISED LEARNING
+The model is trained on labeled data.
 
-#### Dimensionality Reduction
-- Reduces feature space while preserving information  
-- Algorithms: PCA, t-SNE, UMAP, Autoencoders  
-- Use cases: Visualization, noise reduction, feature extraction  
+* Goal: Learn mapping from input to output
+* Most widely used in industry
 
-#### Generative Models
-- Learn data distribution to generate new samples  
-- Algorithms: GANs, VAEs, Diffusion Models  
-- Use cases: Image synthesis, data augmentation, anomaly detection  
+Types:
+
+* Classification
+  Predict discrete class labels
+  Example: Spam detection
+
+* Regression
+  Predict continuous values
+  Example: House price prediction
 
 ---
 
-### Reinforcement Learning
+UNSUPERVISED LEARNING
+The model learns from unlabeled data and finds hidden patterns.
+
+Clustering
+
+* Groups similar data points
+* Algorithms: K-Means, DBSCAN, Hierarchical Clustering, Gaussian Mixture Models
+* Use cases: Customer segmentation, anomaly detection
+
+Dimensionality Reduction
+
+* Reduces feature space while preserving information
+* Algorithms: PCA, t-SNE, UMAP, Autoencoders
+* Use cases: Visualization, noise reduction, feature extraction
+
+Generative Models
+
+* Learn data distribution to generate new samples
+* Algorithms: GANs, VAEs, Diffusion Models
+* Use cases: Image synthesis, data augmentation, anomaly detection
+
+---
+
+REINFORCEMENT LEARNING
 An agent learns to make decisions by interacting with an environment.
 
-- Learns through rewards and penalties  
-- Optimizes long-term cumulative reward  
+* Learns through rewards and penalties
+* Optimizes long-term cumulative reward
 
-#### Key Components:
-- **Agent** → Decision maker  
-- **Environment** → System the agent interacts with  
-- **State** → Current situation  
-- **Action** → Possible moves  
-- **Reward** → Feedback signal  
-- **Policy** → Strategy mapping states to actions  
-- **Value Function** → Expected future reward  
-- **Q-Function** → Expected reward for action in a state  
+Key Components:
 
----
-
-### Semi-Supervised Learning
-- Uses small labeled data + large unlabeled data  
-- Reduces annotation cost  
-
-#### Techniques:
-- Label Propagation  
-- Self-Training  
-- Co-Training  
-- Pseudo-Labeling  
-
-#### Applications:
-- Medical imaging  
-- NLP  
-- Speech recognition  
+* Agent: Decision maker
+* Environment: System the agent interacts with
+* State: Current situation
+* Action: Possible moves
+* Reward: Feedback signal
+* Policy: Strategy mapping states to actions
+* Value Function: Expected future reward
+* Q-Function: Expected reward for action in a state
 
 ---
 
-### Self-Supervised Learning
-- Model generates its own labels from data  
+SEMI-SUPERVISED LEARNING
 
-#### Techniques:
-- Masked prediction  
-- Contrastive learning  
-- Rotation prediction  
+* Uses small labeled data and large unlabeled data
+* Reduces annotation cost
 
-#### Examples:
-- BERT, GPT, SimCLR, DINO  
+Techniques:
 
----
+* Label Propagation
+* Self-Training
+* Co-Training
+* Pseudo-Labeling
 
-## Key ML Concepts
+Applications:
 
-- **Features** → Input variables  
-- **Labels** → Output variable  
-- **Training Data** → Used to train model  
-- **Validation Data** → Used for tuning  
-- **Test Data** → Used for evaluation  
+* Medical imaging
+* NLP
+* Speech recognition
 
 ---
 
-## Model Lifecycle
+SELF-SUPERVISED LEARNING
 
-1. Data Collection  
-2. Data Cleaning & Preprocessing  
-3. Feature Engineering  
-4. Model Selection  
-5. Training  
-6. Evaluation  
-7. Hyperparameter Tuning  
-8. Deployment  
-9. Monitoring & Maintenance  
+* Model generates its own labels from data
 
----
+Techniques:
 
-## Evaluation Metrics
+* Masked prediction
+* Contrastive learning
+* Rotation prediction
 
-### Classification
-- Accuracy  
-- Precision  
-- Recall  
-- F1 Score  
-- Confusion Matrix  
+Examples:
 
-### Regression
-- Mean Absolute Error (MAE)  
-- Mean Squared Error (MSE)  
-- Root Mean Squared Error (RMSE)  
-- R² Score  
+* BERT, GPT, SimCLR, DINO
 
 ---
 
-## Bias-Variance Tradeoff
+KEY ML CONCEPTS
 
-- **Bias** → Error due to overly simple model  
-- **Variance** → Error due to sensitivity to data  
-
-Goal: Balance both  
-
----
-
-## Overfitting vs Underfitting
-
-- **Overfitting**
-  - Learns noise  
-  - High training accuracy, low test accuracy  
-
-- **Underfitting**
-  - Model too simple  
-  - Poor performance on both train & test  
+* Features: Input variables
+* Labels: Output variable
+* Training Data: Used to train model
+* Validation Data: Used for tuning
+* Test Data: Used for evaluation
 
 ---
 
-## Algorithm Quick Reference
+MODEL LIFECYCLE
 
-### Supervised Learning
-- Linear Regression  
-- Logistic Regression  
-- Decision Trees  
-- Random Forest  
-- Support Vector Machine (SVM)  
-- K-Nearest Neighbors (KNN)  
-- Neural Networks  
-
-### Unsupervised Learning
-- K-Means  
-- DBSCAN  
-- Hierarchical Clustering  
-- PCA  
-
-### Reinforcement Learning
-- Q-Learning  
-- Deep Q Networks (DQN)  
-- Policy Gradient Methods  
+1. Data Collection
+2. Data Cleaning and Preprocessing
+3. Feature Engineering
+4. Model Selection
+5. Training
+6. Evaluation
+7. Hyperparameter Tuning
+8. Deployment
+9. Monitoring and Maintenance
 
 ---
 
-## Additional Important Basics
+EVALUATION METRICS
 
-- **Feature Scaling**
-  - Normalization, Standardization  
+Classification
 
-- **Cross Validation**
-  - Improves model reliability  
+* Accuracy
+* Precision
+* Recall
+* F1 Score
+* Confusion Matrix
 
-- **Hyperparameters**
-  - Learning rate, epochs, depth  
+Regression
 
-- **Regularization**
-  - L1 (Lasso), L2 (Ridge)  
+* Mean Absolute Error (MAE)
+* Mean Squared Error (MSE)
+* Root Mean Squared Error (RMSE)
+* R² Score
 
-- **Data Leakage**
-  - When test data influences training (bad practice)  
+---
+
+BIAS-VARIANCE TRADEOFF
+
+* Bias: Error due to overly simple model
+* Variance: Error due to sensitivity to data
+
+Goal: Balance both
+
+---
+
+OVERFITTING VS UNDERFITTING
+
+* Overfitting
+  Learns noise
+  High training accuracy, low test accuracy
+
+* Underfitting
+  Model too simple
+  Poor performance on both train and test
+
+---
+
+ALGORITHM QUICK REFERENCE
+
+Supervised Learning
+
+* Linear Regression
+* Logistic Regression
+* Decision Trees
+* Random Forest
+* Support Vector Machine (SVM)
+* K-Nearest Neighbors (KNN)
+* Neural Networks
+
+Unsupervised Learning
+
+* K-Means
+* DBSCAN
+* Hierarchical Clustering
+* PCA
+
+Reinforcement Learning
+
+* Q-Learning
+* Deep Q Networks (DQN)
+* Policy Gradient Methods
+
+---
+
+ADDITIONAL IMPORTANT BASICS
+
+* Feature Scaling
+  Normalization, Standardization
+
+* Cross Validation
+  Improves model reliability
+
+* Hyperparameters
+  Learning rate, epochs, depth
+
+* Regularization
+  L1 (Lasso), L2 (Ridge)
+
+* Data Leakage
+  When test data influences training (bad practice)
