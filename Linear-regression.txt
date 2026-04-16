@@ -1,0 +1,86 @@
+LINEAR REGRESSION (BASICS)
+
+---
+
+WHAT IS LINEAR REGRESSION
+
+Linear Regression is a simple machine learning algorithm used to predict a continuous value (number).
+
+It finds a straight line that best fits the data and uses that line to make predictions.
+
+Example: Predicting marks based on study hours
+
+---
+
+EQUATION
+
+y = mx + b
+
+* y = predicted value
+* x = input (feature)
+* m = slope (how much y changes when x changes)
+* b = intercept (value of y when x = 0)
+
+---
+
+HOW IT WORKS
+
+* Data points are plotted on a graph
+* A straight line is drawn that best fits the points
+* The model uses this line to predict new values
+
+---
+
+ERROR (LOSS)
+
+* Difference between actual value and predicted value
+* Goal is to make this error as small as possible
+
+---
+
+TYPES
+
+1. Simple Linear Regression
+
+* One input variable
+
+2. Multiple Linear Regression
+
+* More than one input variable
+
+---
+
+EVALUATION
+
+* MAE (Mean Absolute Error)
+* MSE (Mean Squared Error)
+* RMSE (Root Mean Squared Error)
+
+---
+
+ADVANTAGES
+
+* Easy to understand
+* Fast and simple
+* Works well for basic problems
+
+---
+
+DISADVANTAGES
+
+* Works only for linear relationships
+* Affected by outliers
+
+---
+
+USE CASES
+
+* Predicting house prices
+* Sales prediction
+* Marks prediction
+
+---
+
+IMPORTANT POINT
+
+Linear Regression is the first and most basic algorithm in machine learning and helps in understanding more complex models.
